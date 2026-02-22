@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .group-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* COMMON */
+        .member {
+            background: white;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .member:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .layer {
+            margin-bottom: 18px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .motto {
+            font-size: 0.95rem;
+            color: #777;
+        }
+
+        /* ========================= */
+        /* MEMBER 1 — STACKED CARDS WITH BORDER COLORS */
+        /* ========================= */
+        .member1 .layer {
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .member1 .layer:nth-child(1) { border-color: #74b9ff; }
+        .member1 .layer:nth-child(2) { border-color: #a29bfe; }
+        .member1 .layer:nth-child(3) { border-color: #fd79a8; }
+        .member1 .layer:nth-child(4) { border-color: #00b894; }
+        .member1 .layer:nth-child(5) { border-color: #e17055; }
+
+        .member1 .profile-header {
+            text-align: center;
+        }
+
+        /* ========================= */
+        /* MEMBER 2 — SIMPLE BOX STYLE */
+        /* ========================= */
+        .member2 .layer {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .member2 .layer:hover {
+            background: #eee;
+        }
+
+        .member2 .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* ========================= */
+        /* MEMBER 3 — CIRCULAR SECTIONS */
+        /* ========================= */
+        .member3 .layer {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            padding: 20px;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            min-height: 150px;
+        }
+
+        .member3 .profile-header {
+            background: none;
+            border-radius: 0;
+        }
+
+        /* ========================= */
+        /* MEMBER 4 — FLAT TABS STYLE */
+        /* ========================= */
+        .member4 .layer {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .member4 .layer:last-child {
+            border-bottom: none;
+        }
+
+        .member4 .profile-header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        /* ========================= */
+        /* MEMBER 5 — GRID LAYOUT */
+        /* ========================= */
+        .member5 {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        .member5 .profile-header {
+            grid-column: span 2;
+            text-align: center;
+        }
+
+        .member5 .layer {
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .member5 {
+                grid-template-columns: 1fr;
+            }
+
+            .member5 .profile-header {
+                grid-column: span 1;
+            }
+
+            .member {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="group-container">
+        <h1>Meet Our Group</h1>
+
+        <!-- MEMBER 1: Stacked Cards with Border Colors -->
+        <div class="member member1">
+            <div class="layer profile-header">
+                <div class="name">DENICE ANN A. FELOTIO</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Basic Information</div>
+                <div class="info-value">Age: 18</div>
+                <div class="info-value">Birthday: APRIL 29, 2007</div>
+                <div class="info-value">Birth Place: ANTIPOLO CITY</div>
+                <div class="info-value">Address: MARIGMAN ST. GOLDEN HILLS BRGY. SAN ROQUE ANTIPOLO CITY</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Interests</div>
+                <div class="info-value">Motto in life: Reading</div>
+                <div class="info-value">Hobby: COOKING</div>
+                <div class="info-value">Talent: COOKING</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Education</div>
+                <div class="info-value">Dream Course: BSTM</div>
+                <div class="info-value">Why:I chose BSTM because it’s a versatile business degree. 
+                It covers marketing, management, and entrepreneurship, but within a dynamic, global context.</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Family</div>
+                <div class="info-value">Mother: RITCHEIL ANN A. FELOTIO</div>
+                <div class="info-value">Work: Shift Supervisor</div>
+                <div class="info-value">Father: DENNIS A. FELOTIO</div>
+                <div class="info-value">Work: Service Station Attendant</div>
+                <div class="info-value">Crush: ALLEN</div>
+            </div>
+        </div>
+
+        <!-- MEMBER 2: Simple Box Style -->
+        <div class="member member2">
+            <div class="layer profile-header">
+                <div class="name">Nash O. Mañozca</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Basic Information</div>
+                <div class="info-value">Age: 19</div>
+                <div class="info-value">Birthday: May 4 2006</div>
+                <div class="info-value">Birth Place: San Fernando Pampanga</div>
+                <div class="info-value">Address: Dalig Teresa Rizal</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Interests</div>
+                <div class="info-value">Motto in life: Gentle love is still powerful</div>
+                <div class="info-value">Hobby: Playing Online Games</div>
+                <div class="info-value">Talent: Not Discovered</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Education</div>
+                <div class="info-value">Dream Course: Bachelor of Science in Hospitality Management</div>
+                <div class="info-value">Why: I chose BSHM because it prepares me for work on a ship.
+                I want to travel, gain experience, and help my family. This course teaches me good service, 
+                discipline, and professionalism, which are important for working on board.</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Family</div>
+                <div class="info-value">Parents: Junie Ocampo & Reynan Gonzalez</div>
+                <div class="info-value">Work: Call Center</div>
+                <div class="info-value">Crush: Clarrise Reyes</div>
+            </div>
+        </div>
+
+        <!-- MEMBER 3: Circular Sections -->
+        <div class="member member3">
+            <div class="layer profile-header">
+                <div class="name">Jaime F. Leyva Jr.</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Basic Information</div>
+                <div class="info-value">Age: 19</div>
+                <div class="info-value">Birthday: July 19, 2006</div>
+                <div class="info-value">Birth Place: Bahay Paanakan Antipolo City</div>
+                <div class="info-value">Address: Ny St Sitio Hinapao Brgy San Jose Antipolo City</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Interests</div>
+                <div class="info-value">Motto in life: Pain is temporary, But success is forever</div>
+                <div class="info-value">Hobby: Playing Online Games</div>
+                <div class="info-value">Talent: Not Discovered</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Education</div>
+                <div class="info-value">Dream Course: Bachelor of Science in Hospitality Management</div>
+                <div class="info-value">Why: Because i love cooking and i want to be a chef in the future</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Family</div>
+                <div class="info-value">Parents: Norma Leyva & Jaime Leyva</div>
+                <div class="info-value">Work: Cook</div>
+                <div class="info-value">Crush: i have no crush, study first only</div>
+            </div>
+        </div>
+
+        <!-- MEMBER 4: Flat Tabs Style -->
+        <div class="member member4">
+            <div class="layer profile-header">
+                <div class="name">Ralph F. Giva</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Basic Information</div>
+                <div class="info-value">Age: 18</div>
+                <div class="info-value">Birthday: June 15 2007</div>
+                <div class="info-value">Birth Place: Antipolo City</div>
+                <div class="info-value">Address: M santos ext Sitio Hinapao Brgy San Jose Antipolo City</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Interests</div>
+                <div class="info-value">Motto in life: always think positive because in this world nothing is impossible</div>
+                <div class="info-value">Hobby: Playing Online Games</div>
+                <div class="info-value">Talent: Not Discoverd</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Education</div>
+                <div class="info-value">Dream Course: Bachelor of Science in Hospitality Management</div>
+                <div class="info-value">Why: That's why I chose BSHM because I know I won't have any 
+                difficulty because of my work experiences like cooking, waitering, etc. 
+                and I also have many jobs to choose from in the course I chose.</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Family</div>
+                <div class="info-value">Parents: Gary Giva & Emalyn Fulgencio</div>
+                <div class="info-value">Work: Driver</div>
+                <div class="info-value">Crush: Abiiiiiiiiiiiiiiiiii</div>
+            </div>
+        </div>
+
+        <!-- MEMBER 5: Grid Layout -->
+        <div class="member member5">
+            <div class="layer profile-header">
+                <div class="name">Ethan Walker</div>
+                <div class="motto">"Keep improving."</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Basic Information</div>
+                <div class="info-value">Age: 22</div>
+                <div class="info-value">Birthday: Sept 18</div>
+                <div class="info-value">Birth Place: Seattle</div>
+                <div class="info-value">Address: Cedar Street</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Interests</div>
+                <div class="info-value">Hobby: Photography</div>
+                <div class="info-value">Talent: Editing</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Education</div>
+                <div class="info-value">Dream Course: IT</div>
+                <div class="info-value">Why: Loves solving tech problems</div>
+            </div>
+            <div class="layer">
+                <div class="info-label">Family</div>
+                <div class="info-value">Parents: Laura & James</div>
+                <div class="info-value">Work: Teacher & Electrician</div>
+                <div class="info-value">Crush: Secret</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
