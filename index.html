@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-        body {
+            body {
         font-family: 'Poppins', sans-serif;
         background: #f4f6f8;
         padding: 30px;
@@ -76,6 +76,64 @@
     }
 
     /* ========================= */
+    /* PROFILE SECTION WITH TRANSITION */
+    /* ========================= */
+    .profile-section {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .profile-container {
+        position: relative;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .profile-container:hover {
+        transform: scale(1.08);
+    }
+
+    .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .profile-container .young-photo {
+        opacity: 1;
+    }
+
+    .profile-container .present-photo {
+        opacity: 0;
+    }
+
+    .profile-container:hover .young-photo {
+        opacity: 0;
+    }
+
+    .profile-container:hover .present-photo {
+        opacity: 1;
+    }
+
+    .profile-label {
+        text-align: center;
+        font-size: 11px;
+        color: #666;
+        margin-top: 8px;
+        font-weight: 600;
+    }
+
+    /* ========================= */
     /* MEMBER 1 — BLUE */
     /* ========================= */
     .member1 {
@@ -88,7 +146,6 @@
 
     .member1 .profile-header {
         text-align: center;
-        margin-bottom: 20px;
     }
 
     /* ========================= */
@@ -112,7 +169,6 @@
 
     .member2 .profile-header {
         text-align: center;
-        margin-bottom: 20px;
     }
 
     /* ========================= */
@@ -136,7 +192,6 @@
 
     .member3 .profile-header {
         text-align: center;
-        margin-bottom: 20px;
     }
 
     /* ========================= */
@@ -164,7 +219,6 @@
         border-bottom: 2px solid #00b894;
         padding-bottom: 10px;
         text-align: center;
-        margin-bottom: 15px;
         background: transparent;
     }
 
@@ -181,7 +235,6 @@
     .member5 .profile-header {
         grid-column: span 2;
         text-align: center;
-        margin-bottom: 20px;
         background: transparent;
     }
 
@@ -206,6 +259,11 @@
         .member {
             padding: 20px;
         }
+
+        .profile-section {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 </style>
 </head>
@@ -213,9 +271,17 @@
     <div class="group-container">
         <h1>Meet Our Group</h1>
 
-            <!-- MEMBER 1: Stacked Cards with Border Colors -->
+                <!-- MEMBER 1: Blue -->
     <div class="member member1">
-        <div class="layer profile-header">
+        <div class="profile-header">
+            <div class="profile-section">
+                <div>
+                    <div class="profile-container">
+                        <img src="Chibis.jpg" alt="Young Photo" class="young-photo">
+                        <img src="example.png" alt="Present Photo" class="present-photo">
+                    </div>
+                </div>
+            </div>
             <div class="name">DENICE ANN A. FELOTIO</div>
         </div>
         <div class="layer">
@@ -234,8 +300,7 @@
         <div class="layer">
             <div class="info-label">Education</div>
             <div class="info-value">Dream Course: BSTM</div>
-            <div class="info-value">Why: I chose BSTM because it's a versatile business degree. 
-            It covers marketing, management, and entrepreneurship, but within a dynamic, global context.</div>
+            <div class="info-value">Why: I chose BSTM because it's a versatile business degree. It covers marketing, management, and entrepreneurship, but within a dynamic, global context.</div>
         </div>
         <div class="layer">
             <div class="info-label">Family</div>
@@ -250,9 +315,17 @@
         </div>
     </div>
 
-    <!-- MEMBER 2: Simple Box Style -->
+    <!-- MEMBER 2: Purple -->
     <div class="member member2">
-        <div class="layer profile-header">
+        <div class="profile-header">
+            <div class="profile-section">
+                <div>
+                    <div class="profile-container">
+                        <img src="https://via.placeholder.com/140/6c5ce7/ffffff?text=YOUNG" alt="Young Photo" class="young-photo">
+                        <img src="https://via.placeholder.com/140/6c5ce7/ffffff?text=PRESENT" alt="Present Photo" class="present-photo">
+                    </div>
+                </div>
+            </div>
             <div class="name">Nash O. Mañozca</div>
         </div>
         <div class="layer">
@@ -271,9 +344,7 @@
         <div class="layer">
             <div class="info-label">Education</div>
             <div class="info-value">Dream Course: Bachelor of Science in Hospitality Management</div>
-            <div class="info-value">Why: I chose BSHM because it prepares me for work on a ship. 
-            I want to travel, gain experience, and help my family. 
-            This course teaches me good service, discipline, and professionalism, which are important for working on board.</div>
+            <div class="info-value">Why: I chose BSHM because it prepares me for work on a ship. I want to travel, gain experience, and help my family. This course teaches me good service, discipline, and professionalism, which are important for working on board.</div>
         </div>
         <div class="layer">
             <div class="info-label">Family</div>
@@ -287,9 +358,17 @@
         </div>
     </div>
 
-    <!-- MEMBER 3: Dashed Border Style -->
+    <!-- MEMBER 3: Pink -->
     <div class="member member3">
-        <div class="layer profile-header">
+        <div class="profile-header">
+            <div class="profile-section">
+                <div>
+                    <div class="profile-container">
+                        <img src="https://via.placeholder.com/140/e84393/ffffff?text=YOUNG" alt="Young Photo" class="young-photo">
+                        <img src="https://via.placeholder.com/140/e84393/ffffff?text=PRESENT" alt="Present Photo" class="present-photo">
+                    </div>
+                </div>
+            </div>
             <div class="name">Jaime F. Leyva Jr.</div>
         </div>
         <div class="layer">
@@ -322,9 +401,17 @@
         </div>
     </div>
 
-    <!-- MEMBER 4: Flat Tabs Style -->
+    <!-- MEMBER 4: Green -->
     <div class="member member4">
-        <div class="layer profile-header">
+        <div class="profile-header">
+            <div class="profile-section">
+                <div>
+                    <div class="profile-container">
+                        <img src="https://via.placeholder.com/140/00b894/ffffff?text=YOUNG" alt="Young Photo" class="young-photo">
+                        <img src="https://via.placeholder.com/140/00b894/ffffff?text=PRESENT" alt="Present Photo" class="present-photo">
+                    </div>
+                </div>
+            </div>
             <div class="name">Ralph F. Giva</div>
         </div>
         <div class="layer">
@@ -343,9 +430,7 @@
         <div class="layer">
             <div class="info-label">Education</div>
             <div class="info-value">Dream Course: Bachelor of Science in Hospitality Management</div>
-            <div class="info-value">Why: That's why I chose BSHM because I know I won't have any difficulty 
-            because of my work experiences like cooking, waitering, etc. 
-            and I also have many jobs to choose from in the course I chose.</div>
+            <div class="info-value">Why: That's why I chose BSHM because I know I won't have any difficulty because of my work experiences like cooking, waitering, etc. and I also have many jobs to choose from in the course I chose.</div>
         </div>
         <div class="layer">
             <div class="info-label">Family</div>
@@ -359,9 +444,17 @@
         </div>
     </div>
 
-    <!-- MEMBER 5: Grid Layout -->
+    <!-- MEMBER 5: Orange -->
     <div class="member member5">
-        <div class="layer profile-header">
+        <div class="profile-header">
+            <div class="profile-section">
+                <div>
+                    <div class="profile-container">
+                        <img src="https://via.placeholder.com/140/e17055/ffffff?text=YOUNG" alt="Young Photo" class="young-photo">
+                        <img src="https://via.placeholder.com/140/e17055/ffffff?text=PRESENT" alt="Present Photo" class="present-photo">
+                    </div>
+                </div>
+            </div>
             <div class="name">Rod-Anne R. Navarro</div>
         </div>
         <div class="layer">
@@ -399,4 +492,3 @@
 </div>
 </body>
 </html>
-
